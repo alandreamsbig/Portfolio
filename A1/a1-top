@@ -1,0 +1,78 @@
+#!/bin/bash
+
+function recursive() {
+	folder=""
+	for file in "$1"/* 
+	do
+
+   	if [ ! -d "$file" ] ; then #checks for directory or a file
+      	echo "${file} is a file"
+			folder=$(dirname "$file")
+   	else
+      	echo "${file} is a directory"
+   		recursive "${file}"
+		fi
+
+   	export outfile=$folder/dir.xml #output the dir.xml file in each directory
+
+   	echo '<?xml version="1.0" encoding="ISO-8859-1"?>' > $outfile
+   	echo '<direntry>' >> $outfile
+	
+   		if [ -e "$folder/README" ] ; then #check if README exist
+				
+				export index=`grep index $folder/README` #save string to index
+				export required=`grep required $folder/README` 
+		
+
+				if [[ -n ${index} ]] ; then #check if index exists
+					echo "    <index>" >> $outfile
+					echo "     	<file>" >> $outfile
+					for item in ${index} ; do
+						#separates the field		
+						echo "	    " `echo ${item} | cut -d: -f2` >> $outfile
+					done 
+					echo "     	</file>" >> $outfile
+					echo "    </index>" >> $outfile				
+				fi
+				
+				if [[ -n ${required} ]] ; then #check if required exists
+					echo "    <required>" >> $outfile
+					echo "     	<file>" >> $outfile
+					for item in ${required} ; do
+						echo "	    "  `echo ${item} | cut -d: -f2 ` >> $outfile
+					done
+					echo "     	</file>" >> $outfile
+					echo "    </required>" >> $outfile
+				else
+					echo " " >> $outfile
+				fi
+			else
+				echo "README does not exist"
+			fi
+			export index=
+			export required=
+	
+		echo "   <other>" >> $outfile
+  
+		for f in "$folder"/*
+
+		do
+			if [[ -d $f ]] ; then #check if it is a directory
+      		echo "      <dir>${f##*/}<dir>" >> $outfile
+			elif [[ -f $f ]] ; then #check if it is a file
+				echo "      <file>${f##*/}<file>" >> $outfile
+			else
+				echo "ERROR $ Not File or Dir"
+			fi
+   	done
+
+   	echo "   </other>" >> $outfile
+   	echo '</direntry>' >> $outfile
+done	
+}
+#check if user provide argument or not
+file=.
+if [ -d "$1" ]; then
+	file="$1"
+fi
+recursive $file

@@ -1,0 +1,38 @@
+#!/bin/bash
+DIR="."
+
+if [ $# -gt 0 ]
+then
+DIR=$1
+fi
+
+for directory in $(find $DIR -type d)
+do
+	if [ -e "$directory/README" ]
+then 
+
+echo '<?xml version="1.0" encoding="ISO-8859-1"?>' >> dir.xml
+echo '<direntry>' >> dir.xml
+echo "	<index>" >> dir.xml
+
+awk -F":" '$1 == "index"{for (i = 2; i <= NF; i++) print "		<file>"$i"</file>" >> element }' element="dir.xml" README
+
+echo "	</index>" >> dir.xml
+echo "	<required>" >> dir.xml
+
+awk -F":" '$1 == "required"{for (i = 2; i <= NF; i++) print "		<file>"$i"</file>" >> element }' element="dir.xml" README
+
+echo "	</required>" >> dir.xml 
+echo "	<other>" >> dir.xml
+
+for file in *; 
+
+do
+	echo "		<file>${file##*/}</file>" >> dir.xml  
+done
+
+echo "	</other>" >> dir.xml
+echo '</direntry>' >> dir.xml 
+fi
+done
+

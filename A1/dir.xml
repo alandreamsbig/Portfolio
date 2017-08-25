@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+    <index>
+     	<file>
+	     Checking
+	     if
+	     index
+	     and
+	     required
+	     string
+	     exist
+	     can
+	     be
+	     done
+	     by
+	     using
+	     the
+	    
+     	</file>
+    </index>
+    <required>
+     	<file>
+	     Checking
+	     if
+	     index
+	     and
+	     required
+	     string
+	     exist
+	     can
+	     be
+	     done
+	     by
+	     using
+	     the
+	    
+     	</file>
+    </required>
+   <other>
+      <file>README<file>
+      <file>a1<file>
+      <file>a1-top<file>
+      <file>dir.xml<file>
+      <file>listfile<file>
+   </other>
+</direntry>

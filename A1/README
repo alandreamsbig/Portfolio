@@ -1,0 +1,45 @@
+
+Hi, Ken
+Thanks for doing this and spending time helping me. Very appreciate it.
+
+What I learned:
+
+1.
+When debugging a program, it is helpful to try single commands on the
+command line first and see if it works then implement it to the program.
+
+2.
+Indenting in bash is critical, make sure the conditions statements are
+correctly indented.
+
+3.
+The logic of recursion is to call the function itself multiple times until
+it meets a condition that should not happen
+
+4.
+A way to parse strings from a file can be done by saving the strings to a
+variable first then use the "cut -d" command to split the fields
+
+5.
+Checking if index and required string exist can be done by using the -n
+
+6.
+-d and -f checks if it is a directory or a file
+
+7.
+calling bash variables must add a "$" before the variable name
+
+8.
+The debugging technique is to fix one part of the program at a time, try to
+think in the right direction, in other words, check if my logic is right or
+wrong
+
+9. 
+find . -name dir.xml -printf "%p\n" -exec cat {} \; 
+this is a useful command to see all the xml files at one time
+
+10.
+Add echo after or before certain area of conditional statements or loop to
+see if the programs goes through the conditional statements or loop. Helpful
+for debugging.
+

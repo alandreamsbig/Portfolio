@@ -1,0 +1,12 @@
+
+To whom it may concern:
+There are some flaws with the delete album(-d) funtion, it is able to delete
+the entire album only if the album is not the last one in sample.db.
+Also, after adding a new album and deleting the album may not always work.
+If you delete an album and try to do other commands, the program might not
+run and you will have to use a "orginal" sample.db for other command
+testing. I've tried my best, but the delete function only works in a certain
+way.
+
+Sincerley,
+Alan Tsai

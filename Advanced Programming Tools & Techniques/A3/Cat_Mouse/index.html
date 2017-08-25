@@ -1,0 +1,140 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Expires" content="no-expire">
+  <meta name="Author" content="Kurt Schmidt">
+	<meta name="Publisher" content="Drexel University">
+	<meta name="Copyright" content="">
+	<meta name="Keywords" content="Programming Techniques Unix">
+	<meta name="Description"
+		content="Assignment CS265 - Cat-mouse">
+	<meta name="Pagetype" content="Lab">
+	<meta name="Audience" content="All">
+	<link rel='shortcut icon' type='image/gif'
+		href='../../../images/drexel.gif'></link>
+	<script language="JavaScript" src="../courseInfo.js"></script>
+	<script language="JavaScript" src="../Scripts/courseFormat.js"></script>
+  <title>CS265 Assignment - Inheritance</title>
+</head>
+
+
+<body text="#330099" link="#000066" vlink="#000066" alink="#FF0000"
+	background="../../../images/blueTexture.jpeg">
+
+<h1> Assignment - Cat &amp; Mouse </h1>
+
+<div>
+<img src='island.png' alt='Island' align='left'/>
+<p> Okay, we'll be playing a little game.  Imagine an island (okay, a 5x5
+grid).  This island is surrounded by water, and there are 6 bridges off of
+the island.  On the island is a hungry cat, and a scared mouse. </p>
+
+<p> The cat is hungry, but it's his island, and he won't leave it.  The
+mouse, of course, will escape, if he finds a bridge.  Sadly, in his fright,
+he might run into the water and drown (had a terrible experience as a young
+mouse, never learned to swim). </p>
+
+<p> At the beginning of the game, both the cat and the mouse are placed
+randomly on the island proper.
+
+<p> The bridges are roughly evenly&ndash;spaced, 2 on each side. </p>
+</div>
+
+<p> 
+<img src='grid.png' alt='Island as a grid' align='right'/>
+I'd recommend extending the coordinate system to include the bridges and the
+immediately surrounding water. </p>
+
+<p> Create  an <code>Animal</code> abstract class.  It'll have a protected
+attribute, of type <code>Point</code>, its location on the map, and a
+private String attribute, the animal's name.  You'll need to add other
+attributes, as well. </p>
+
+<p> It'll define these methods: </p>
+
+<ul>
+	<li> <code>String getName()</code> </li>
+	<li> <code>Point getLocation()</code> </li>
+	<li> <code>void setStartLocation()</code> </li>
+</ul>
+
+<p> <code>Animal</code> will have a single constructor, that takes a
+<code>String</code> (the animal's name), a <code>Random</code> object
+(the single random number generator that everybody will use).  It'll store
+these values as instance variables (attributes). </p>
+
+<ul>
+	<li> <code>Animal( String name, Random rng )</code></li>
+</ul>
+
+<p> It'll also declare an abstract method: </p>
+
+<ul>
+	<li> <code>void move()</code> </li>
+</ul>
+
+<p> Inherit from <code>Animal</code> to create a <code>Cat</code> class;
+override the <code>move</code> method, to randomly move north, south, east
+or west.  Again, the cat will not jump in the water, nor will it cross a
+bridge.  It'll have a single constructor, that takes a String, calls the
+parent class' constructor to set the name. </p>
+
+<p> Also create a <code>Mouse</code> class from <code>Animal</code>; again,
+override the <code>move</code> method, to randomly move north, south, east
+or west.  If the mouse drowns or escapes he won't make any more moves.  You
+might need to keep (and initialize) another attribute, to track the mouse's
+mobility.  It also has a single constructor, to set the name. </p>
+
+<p> Finally, create a <code>Chase</code> class, which'll have a static
+<code>playGame</code> method, which plays a single game, and returns a
+status (cat had a snack, mouse escaped, mouse drowned). </p>
+
+<p> Randomly choose a starting point for each animal.  To be fair, if they
+start on the same spot, pick another start for one of the animals.  The
+mouse moves first; if he lands on a square that has a bridge he escapes, the
+game is done.  If he falls in the water, the game is also done.  Then the
+cat gets to move; if he lands on the same spot, he gets a snack, and play is
+over. </p>
+
+<p> In the <code>Chase</code> class, write a <code>main</code> method
+which'll play the game 30 times, and report the outcome, to standard out, in
+a single line. </p>
+
+<p> You may add any (non-public) helper methods to any class that you find
+useful. </p>
+
+<h3> Picking random numbers </h3>
+
+<p> You'll want to create a <code>Random</code> object, and use the
+<code>nextInt( n )</code> method. </p>
+
+<p> There will be only one generator for the entire program; create it
+(once) in the main driver, and pass it to your animals as you create them.
+</p>
+
+
+<h3> Input </h3>
+
+<p> None </p>
+
+<h3> Output </h3>
+
+<p> You are to print the result of each of 30 trials to stdout, one result
+per line, single spaced.  After all the trials print a blank line, then
+report 3 statistics:  The % of times the mouse escaped, drowned, and was
+eaten. </p>
+
+<h2>What to hand in</h2>
+
+<ul>
+	<li><tt><b>Animal.java</b></tt></li>
+	<li><tt><b>Cat.java</b></tt></li>
+	<li><tt><b>Mouse.java</b></tt></li>
+	<li><tt><b>Chase.java</b></tt></li>
+	<li><tt><b>README</b></tt> &ndash; <i>(opt)</i> </li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <file>Animal.class<file>
+      <file>Animal.java<file>
+      <file>Cat.class<file>
+      <file>Cat.java<file>
+      <dir>Cat_Mouse<dir>
+      <file>Chase.class<file>
+      <file>Chase.java<file>
+      <file>Mouse.class<file>
+      <file>Mouse.java<file>
+      <file>dir.xml<file>
+   </other>
+</direntry>

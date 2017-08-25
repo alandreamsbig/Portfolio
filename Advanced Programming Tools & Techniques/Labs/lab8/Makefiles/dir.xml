@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+ 
+   <other>
+      <dir>Bar<dir>
+      <dir>Grade<dir>
+      <file>Makefile<file>
+      <file>README<file>
+      <file>count.make<file>
+      <file>dir.xml<file>
+      <file>eg.mak<file>
+      <file>expected.out<file>
+      <file>foo<file>
+      <file>foo.c<file>
+      <file>foo.class<file>
+      <file>foo.h<file>
+      <file>foo.java<file>
+      <file>foo.o<file>
+      <file>foo.py<file>
+      <file>index.html<file>
+      <file>index.html.BAK<file>
+      <file>index.html.NEW<file>
+      <file>lab.tgz<file>
+      <file>lc.make<file>
+      <file>main.c<file>
+      <file>main.o<file>
+      <file>pattern.mak<file>
+   </other>
+</direntry>

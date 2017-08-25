@@ -1,0 +1,94 @@
+Alan Tsai
+
+Q1:
+The add function adds a string prefix and a string suffix to the table. It
+creates a state object and adds the prefix to that state object using
+lookup. Addsuffix method is used after the state object has been populated
+and takes a state and a suffix. add() allows a word to be added to the
+suffix list and updates the prefix of the word, addSuffix adds to the state
+and the suffix can not be changed later.
+
+Q2:
+lookup searches for prefixes and creates one from a request. It returns a
+pointer if exist of if it was created and returns NULL otherwise.The
+function takes a string prefix and a boolean create value and determines if
+a new state should be created. 
+lookup is called by add()
+
+Q3:
+(null) (null) | It's
+(null) It's   | a
+It's   a      | new
+a      new    | dawn
+new    dawn   | (null)
+
+a. 3
+b. 3
+c. 3
+d. 2
+
+Q4:
+Each string is only allocated a certain amount of memory that is needed.
+
+Q5:
+The memory is not free when storing the information within hashtable.You
+need to free each pointer in order to allocated to other programs.
+
+Q6:
+
+void cleanup_statetab()
+{
+	State *sp = NULL;
+	State *temp = NULL;
+
+	for (int i = 0; i < NHASH; i++)
+	{
+		for (sp = statetab[i]; sp != NULL; sp = temp)
+		{
+			temp = sp->next;
+			free(sp);
+		}
+	}
+}
+
+Q7:
+
+The function works properly, there were no difficulties
+
+Q8:
+Each string has been freed exactly once because the memory no longer has
+accessibility by the program after a prefix/suffix has been freed. 
+
+Q9:
+Prefixes are stored in a deque. Vectors can not be used because they do not
+support random insertion and removal.
+
+Q10:
+A map serves as our dictionary
+
+Q11:
+The suffixes are stored in a vector then placed in the map
+
+Q12:
+Implementting the C++ simplfies the code and we don't need to create our own
+hash table implementation. 
+
+Q13:
+C++ is slower that C and there is less control over the implementation. Also
+more memory are being used
+
+Q14:
+The prefixes are stored in a dictionary as keys 
+
+Q15:
+The dictionary in python replaces the hashtable
+
+Q16:
+The satellite data is stored by a list of suffixes in a list of object.
+
+Q17:
+There are fewer codes needed to be written in Python, the data structure is
+better and don't need to implement pointers.
+
+Q18:
+Python code uses more memory and is slower than C++

@@ -1,0 +1,88 @@
+Alan Tsai
+lab 5
+
+Q1:
+i. A list is a sequence of elements, not indexable(immediately). Space is
+allocate for each new element and consecutive elements are linked together
+with a pointer.
+
+ii. A stack is a temporary storage place for the computer to use. It is used
+for interrupt handling and function calls.
+
+iii. A queue is a data structure that holds a collection of information that
+is presented in a certain order to implement the First In First Out system.
+A queue is a type of buffer.
+
+iv. Dictionay and Map are data structure that allow the association of a key
+with another term. It has a set of two lists such that each item from second
+list corresponds to one or more items from the first list(key).
+
+Q2:
+log2(n) times. The number of times n can be divided in half before there is
+nothing left.The algorithm for binary search starts by looking at the middle
+item x. If x is equal to v, it quits and returns true. Otherwise, it uses
+the relative ordering of x and v to eliminate half of the array (if v is
+less than x, then it can't be stored to the right of x in the array;
+similarly, if it is greater than x, it can't be stored to the left of x).
+Once half of the array has been eliminated, the algorithm starts again by
+looking at the middle item in the remaining half. It quits when it finds v
+or when the entire array has been eliminated.
+
+Q3:
+n times. The worst case performance scenario for a linear search is that it needs to loop through the entire collection; either because the item is the last one,or because the item isn't found. In other words, if you have n items in your
+collection, the worst case scenario to find an item is n iterations.
+
+Q4:
+If the list is unsorted, there would be no way for the binary search to
+determine which half of the list to continue to search through.
+
+Q5:
+*84* 37 93 82 98 27 63 73 93 27 75 55 45 8
+37 82 27 63 73 27 75 55 45 8 *84* 93 98 93
+*37* 82 27 63 73 27 75 55 45 8 *84* 93 98 93
+27 27 8 *37* 82 63 73 75 55 45 84 93 98 93
+*27* 27 8 37 82 63 73 75 55 45 84 93 98 93
+8 *27* 27 37 82 63 73 75 55 45 84 93 98 93
+8 27 27 37 | *82* 63 73 75 55 45 84 93 98 93
+8 27 27 37 | 63 73 75 55 45 *82* 84 93 98 93
+8 27 27 37 | 55 45 63 73 75 82 84 93 98 93
+8 27 27 37 | 45 55 63 73 75 82 84 93 98 93
+8 27 27 37 45 55 63 73 75 82 84 | 93 98 93
+8 27 27 37 45 55 63 73 75 82 84 | 93 93 98
+8 27 27 37 45 55 63 73 75 82 84 93 93 98
+< DONE >
+
+Q6:
+3 24 06
+
+Q7:
+[13,[28,[24,none]]]
+
+Q8:
+There 2 sets of different output because the buffer size is changing.
+The changing of the buffer size causes the output of the pointers to vary
+because the memory allocations of pointers is crucial to their definiton.
+
+Q9:
+ga 24
+Jesse 78
+Cos 86 
+Kate 28
+Nash 11
+Vera 99
+Bob 38
+
+hash.c takes 2 arrays and associates them with one another using pointers
+to associate an index value with a name
+
+Q10:
+int find(char *key, int *p_ans)
+{ 
+	if(p_ans==key)
+	{	
+		p_ans -> key;
+		return 1;
+	}
+	else
+		return 0;
+}

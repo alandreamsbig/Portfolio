@@ -1,0 +1,10 @@
+#!/bin/bash
+ext="$1"
+for file in *; do
+if test -r "$file"; then
+mv "$file" "${file%.*}.$ext"
+else
+nothing="$file"
+echo "Please enter the correct file extension"
+fi
+done

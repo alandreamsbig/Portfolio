@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcc -osign sign.c
+./sign < /usr/share/dict/words | sort | awk -f squash.awk > out
+#./sign < /usr/share/dict/words |sort | ./squash > out
+awk '{ print NF " " $0}' < out | sort -n |tail
+

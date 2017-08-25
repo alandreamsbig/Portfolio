@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for music in *.mp3; do
+	artist="$(echo -e "${music}" | cut -f1 -d"-")"
+	song="$(echo -e "${music}" | sed 's/.*-//')"
+   formatName="$artist""/""$song"
+echo "$formatName"
+mkdir -p "$artist"
+mv "$music" "$formatName"
+done

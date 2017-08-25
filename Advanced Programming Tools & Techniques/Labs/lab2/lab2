@@ -1,0 +1,82 @@
+Alan Tsai
+CS265 lab2
+
+Q1:
+There were none because no files were modified 2 days ago
+
+Q2:
+find ~/ -iname "*.bash" -print
+
+Q3:
+/home/ayt32/CS265/Lab1/hello.bash
+/home/ayt32/tmp/gotMe.bash
+
+Q4:
+97  499 2960 breadIsDangerous.txt
+number of characters:2960
+number of words: 499
+number of lines:97
+
+Q5:
+grep 'the' breadIsDangerous.txt | wc -l
+result: 8
+
+Q6:
+a new file called spellExample.bak is created in the directory
+
+Q7:
+diff analyzes two files and prints the lines that are different.The first
+line of the output will contain line numbers corresponding to the first
+file, a letter for add,change,or delete, in this case it is change. And line
+numbers corresponding to the second file.
+Output:
+1c1
+< I went to a garden party
+---
+> I went to a gadren party
+3c3
+< bnuch of my old friends did somehting
+---
+> bnuch of my old freinds did somehting
+6d5
+< An extra line
+
+Q8:
+No output since we are comparing the same file and there are no difference.
+
+Q9:
+The first grep returns the value 0 meaning it found the word “dough” in the
+txt file and was a success or match. The second grep returned 127 which
+means command not found because there is no match for uniqueString in the
+txt. The third grep also returns the value 127 because the file doesn’t
+exist, therefore command not found.
+type grep dough breadIsDangerous.txt
+
+ayt32@tux64-12 Bash> grep dough breadIsDangerous.txt
+roven that as little as one pound of dough can be used to
+5.   Bread is made from a substance called "dough." It has been
+proven that as little as one pound of dough can be used to
+
+type echo $?
+0
+
+type grep uniqueString breadIsDangerous.txt
+
+type echo $?
+127
+
+type grep dough noSuchFile
+ayt32@tux64-12 Bash> grep dough noSuchFile
+grep: noSuchFile: No such file or directory
+
+type echo $?
+127
+
+Q10:
+File attached with upload
+
+Q11:
+File attached with upload
+
+Q12:
+File attached with upload

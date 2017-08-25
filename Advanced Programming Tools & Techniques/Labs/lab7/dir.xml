@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <dir>Java<dir>
+      <file>build.xml<file>
+      <file>dir.xml<file>
+      <file>prob1.class<file>
+      <file>prob1.java<file>
+      <file>prob2.class<file>
+      <file>prob2.java<file>
+      <file>prob3.class<file>
+      <file>prob3.java<file>
+      <file>prob4.class<file>
+      <file>prob4.java<file>
+   </other>
+</direntry>

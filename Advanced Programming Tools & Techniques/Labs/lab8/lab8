@@ -1,0 +1,51 @@
+lab 8 Written problems
+Alan Tsai
+
+1.1
+i.) Hide implementation details also known as information hiding,
+encapsulatoin, abstraction & modularization. It allows the programmer to
+modify the interface without affecting caller or needing to alter calling
+code. It avoid global variables and pass data through function arguments.
+
+ii.) Choose a small orthogonal set of primitives means to resist tempation
+to have multiple ways of doing the same thing. Minimize the set of behaviors
+and maintain consistency.
+
+iii.) Don't reach behind user's back means decrease coupling, minimize and
+document side-effects.Don't write files that user doesn't know.
+
+iv.) Do the same thing the same way everywhere means the code should have
+consistency and regularity. The arguments should be consistent and behave
+similar to associated interfaces.
+
+1.2
+The global vriables are being used and the caller must open and closed
+files. There is a limitation on char and fields for the line it is difficult
+to change properites.
+
+1.3
+Fields are separted by commas, there are quotes showing, the fields are
+numbered from 0. The fields can be read in any length and be read only.End
+of line is being checked.
+
+1.4
+The global variables are still being used.The data input can not be stored
+for later use. It does not take more than one file and parse more than one
+CSV. It can not parse two CSV files at once because only one instance of the
+required vairables exist.
+
+1.5
+The C++ implementation hides the implementation detatails because it uses a
+class. It also uses dynamic vectors and strings to store fields. 
+
+1.6
+The interface for the C++ implementation does adhere the guidlines from
+lecture. The C++ program hides the implementation by using the class. It
+uses minimal methods to complete the program and changes are made visible.
+The C++ program uses common names and functions.
+
+1.7
+Csv.java and test.csv attached
+
+2.1
+Makefile attached 

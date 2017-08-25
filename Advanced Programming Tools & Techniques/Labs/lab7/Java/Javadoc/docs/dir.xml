@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <file>allclasses-frame.html<file>
+      <file>allclasses-noframe.html<file>
+      <dir>class-use<dir>
+      <file>constant-values.html<file>
+      <file>deprecated-list.html<file>
+      <file>dir.xml<file>
+      <file>help-doc.html<file>
+      <file>index-all.html<file>
+      <file>index.html<file>
+      <file>overview-tree.html<file>
+      <file>package-frame.html<file>
+      <file>package-list<file>
+      <file>package-summary.html<file>
+      <file>package-tree.html<file>
+      <file>package-use.html<file>
+      <file>pokerSuit.html<file>
+      <dir>resources<dir>
+      <file>stylesheet.css<file>
+   </other>
+</direntry>

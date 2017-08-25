@@ -1,0 +1,22 @@
+<project default="compile">
+	<target name="prob1">
+		<javac srcdir="." includes='prob1.java'/>
+		<java classname='prob1'/></java>
+			<arg value="start1"/>
+	</target>
+	<target name="prob2">
+      <javac srcdir="." includes='prob2.java'/>
+      <java classname='prob2'/></java>
+         <arg value="start2"/>
+   </target>
+	<target name="prob3">
+      <javac srcdir="." includes='prob3.java'/>
+      <java classname='prob3'/></java>
+         <arg value="start3"/>
+   </target>
+	<target name="prob4">
+      <javac srcdir="." includes='prob4.java'/>
+      <java classname='prob4'/></java>
+         <arg value="start4"/>
+   </target>
+</project>

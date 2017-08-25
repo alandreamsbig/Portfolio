@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <file>dir.xml<file>
+      <file>poker.mf<file>
+      <file>pokerClient.java<file>
+      <file>pokerSuit.java<file>
+      <dir>tmp<dir>
+   </other>
+</direntry>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <file>bike.class<file>
+      <file>bike.jar<file>
+      <file>bike.java<file>
+      <file>bike.mf<file>
+      <file>dir.xml<file>
+      <file>internalCombustion.class<file>
+      <file>internalCombustion.java<file>
+      <file>motorcycle.class<file>
+      <file>motorcycle.java<file>
+      <file>vehicle.class<file>
+      <file>vehicle.java<file>
+   </other>
+</direntry>

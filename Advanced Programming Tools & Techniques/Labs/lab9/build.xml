@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project default='test' basedir='.'>
+   <description>
+      'An example that uses JUnit to test as we build.  Also demonstrates
+      references'
+   </description>
+
+   <target name="compile" depends='gInt'/>
+
+  <target name="gInt">
+    <javac srcdir='./' includes='gInt.java'/>
+      <!-- Not sure <javac srcdir='./'/> -->
+  </target>
+
+  <target name="gIntTest">
+    <javac srcdir='./' includes='gIntTest.java'>
+   
+  </target>
+
+   <target name='gIntTest' depends='compile,gIntTest'>
+      <junit>	 
+        	<classpath>
+					<pathelement path ='${CLASSPATH}'/>
+					<pathelement location = 'user/share/java/junit.jar'/>
+					<pathelement location = '.'/>
+			</classpath>
+
+         <formatter type='plain'/>
+         <test name='gIntTest'/>
+      </junit>
+   </target>
+
+  <target name="clean">
+    <delete>
+         <fileset dir="./">
+            <include name='*.class'/>
+            <include name='TEST*.txt'/>
+         </fileset>
+      </delete>
+  </target>
+</project>

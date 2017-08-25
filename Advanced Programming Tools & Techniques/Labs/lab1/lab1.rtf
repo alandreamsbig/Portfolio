@@ -1,0 +1,102 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red47\green180\blue29;\red223\green223\blue223;\red133\green0\blue2;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Alan Tsai Section 02 lab1\
+\
+Q1: .bash_profile is invoked for login shells meaning when a user login from console or remotely from ssh .bash_profile is invoked to configure things before the initial command prompt. .bashrc invoked if the user already logged into the machine\
+and open a new terminal inside Gnome or KDE before the window command prompt.\
+\
+Q2:Vimtutor file attached with submission \
+\
+Q3: 
+\f1\fs22 \CocoaLigature0 total 12\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 -rw-rw-r-- 1 ayt32 ayt32 8059 Mar 31 14:50 funny\
+-rwxrwxr-x 1 ayt32 ayt32  240 Mar 31 14:50 
+\f2\b \cf2 hello.bash\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \
+
+\f0\b0\fs24 \cf0 \CocoaLigature1 Q4: user can r&w some_file, group can read some_file, world can read some_file\
+\
+Q5: user have all permissions to some_file, group can r&w, world can r&w\
+\
+Q6: Yes I can read it changed to \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf0 \CocoaLigature0 -rw-r--r-- 1 ayt32 ayt32 8059 Mar 31 14:50 funny\
+\
+Q7: Yes I can read it changed to \
+total 12\
+-rw-r--r-- 1 ayt32 ayt32  240 Mar 31 14:50 hello.bash\
+\
+Q8: Not successful, Permission denied\
+\
+Q9:type chmod 700 hello.bash ,chmod 755 hello.bash\
+\
+Q10: Shows error message \cf3 \cb4 E45: 'readonly' option is set (add ! to override)\
+\cf0 \cb1 \
+Q11: \
+ayt32@tux64-13 Lab1> ls *\
+annoy  annoy.cc  funny  
+\f2\b \cf2 hello.bash
+\f1\b0 \cf0   itemList  itemList-2cols  TelecomTruths  UnitTestingPhase\
+\
+ayt32@tux64-13 Lab1> ls a*\
+annoy  annoy.cc\
+\
+ayt32@tux64-13 Lab1> ls *m*\
+itemList  itemList-2cols  TelecomTruths\
+\
+ayt32@tux64-13 Lab1> ls annoy?\
+ls: cannot access annoy?: No such file or directory\
+\
+Q12: One file called \'93a\'94 and one called \'93space\'94\
+\
+Q13: \
+ayt32@tux64-13 ~> echo Is a < b?\
+-bash: b?: No such file or directory\
+ayt32@tux64-13 ~> echo "is a < b?"\
+is a < b?\
+ayt32@tux64-13 ~> echo "\\$USER is $USER"\
+$USER is ayt32\
+ayt32@tux64-13 ~> echo '\\$USER is $USER'\
+\\$USER is $USER\
+ayt32@tux64-13 ~> echo "Today is `date`"\
+Today is Thu Mar 31 16:44:30 EDT 2016\
+ayt32@tux64-13 ~> echo "Today is $(date)"\
+Today is Thu Mar 31 16:44:40 EDT 2016\
+ayt32@tux64-13 ~> echo 'Today is `date`'\
+Today is `date`\
+ayt32@tux64-13 ~> echo -e "Files that start w/e:\\n`ls e*`"\
+ls: cannot access e*: No such file or directory\
+Files that start w/e:\
+\
+Q14:\
+sort itemList-2cols: Write sorted concatenation of all FILE(s) to standard output.\
+sort -n itemList-2cols: compare according to string numerical value\
+\
+Q15: sort -nr itemList-2cols | head -8\
+\
+Q16: the Lab1 file is now Lab1.tar.gz meaning tape archiving, the storing of entire file systems onto magnetic tape.\
+\
+Q17:The tgz file now becomes Lab1.2.tgz  Lab1.tar  Lab1.tar.gz\
+\
+Q18:\
+ayt32@tux64-13 ~> grep *Vacation* ~kschmidt/public_html/CS265/Labs/Unix/*\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/Blah: Is a directory\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/chmod_lab.orig: Permission denied\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/Grade: Permission denied\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/ids: Permission denied\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/Startup: Permission denied\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/tmp: Permission denied\
+grep: /home/kschmidt/public_html/CS265/Labs/Unix/vi_lab: Permission denied\
+
+\f2\b \cf2 \
+\
+}

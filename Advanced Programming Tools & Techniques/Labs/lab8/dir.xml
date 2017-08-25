@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<direntry>
+   <other>
+      <file>Csv.java<file>
+      <dir>Interfaces<dir>
+      <dir>Makefiles<dir>
+      <file>dir.xml<file>
+      <file>lab8<file>
+      <file>test.csv<file>
+   </other>
+</direntry>

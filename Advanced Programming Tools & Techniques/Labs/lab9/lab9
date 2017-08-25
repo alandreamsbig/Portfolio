@@ -1,0 +1,38 @@
+Alan Tsai
+
+1.1 
+A segmentation fault occured and a file called core was modified. An
+executable file called bug3 was also created.
+
+1.2
+It bombed the function #0  0x00002abe8a7a6090 in ?? ()
+
+1.3
+a. 
+Does not compile. The n should be passed by reference in scanf
+
+b.
+Does not compile. Should switch the float and decimal for the output stream
+
+c.
+The while loop was itterating before the values were added to the array
+
+d.
+Does not compile. Change the n for the scanf function to passed by reference
+
+e.
+Does not compile. Missing braces for the for loop. last is not iterated
+correctly. The program needs a ranomized pivot locatoin so the return array
+does not have empty first element. We can assert a new pivot location
+
+1.4
+The compiler cannot catch this because it isn't a syntax error. It was a
+logic error. However, we can see it in the stack because the values are the
+same in the stack
+
+1.5
+There will be an error because the string comparison function can not see
+the differnece of integer values. There is a type specific when we pass the
+string comparison function to sort integers.
+
+

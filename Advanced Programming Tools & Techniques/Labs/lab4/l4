@@ -1,0 +1,98 @@
+Alan Tsai
+
+1.1
+The TRUE should be 1 and the FALSE should be 0 as this is a universal usage
+in computer.
+
+1.2
+int IsSmaller(char *first, char *second) {
+	if (strcmp(first,second) < 1)
+		return 1;
+	else
+		return 0;
+	}
+
+1.3
+The variable naming should be able to pronounced
+
+1.4
+if (c!='y' && c!='Y') 
+	return;
+
+if(length > BUFSIZE) {
+	length = BUFSIZE;
+}
+
+flag = !flag;
+
+quote = 0;
+if (strcmp(*line, '"')==0) {
+	quote = 1;
+}
+
+bit = (val & 1) ? 1 : 0;
+
+1.5
+The naming is not clear, how the function works is confusing
+
+1.6
+
+2 1
+
+1.7
+if (!istty(stdin) && !istty(stdout) && !istty(stderr))
+	return(0);
+
+return retval;
+
+for(k=0; k<4; k++) {
+	scanf("%lf", &dx);
+	x += dx;
+}
+
+1.8
+for (int count=0; count<total; count++) {
+	if(this.getName(count) == nametable.userName()) {
+		return(true);
+	}
+}
+
+1.9
+The macro needs to have parantheses around the variable 'c'.
+The macro gets executed multiple times.
+
+1.10
+#define METER_PER_FEET 	0.3048
+#define FEET_PER_METER 	3.2084
+#define FEET_PER_MILE	5280.0
+#define KILOMETER_PER_MILE	1.609344
+#define SQUARE_KM_PER_SQUARE_MILE	2.589988
+
+1.11
+// returns 1 i f w i n dictionary, otherwise returns 0
+This is not the comment for this void function, it does not return a value
+
+// test for even number
+Does not say what n > MAX is
+
+// Write a message
+Doesn't specify what messages are printed out
+
+// Add to line counter for each line written
+This line can be written in the function replacing //increment line counter
+because they are the same and don't need 3 lines of same comments.
+
+2.1 
+Submitted 
+
+2.2
+Submitted
+
+2.3
+Submitted
+
+2.4
+Submitted
+
+2.5
+Submitted

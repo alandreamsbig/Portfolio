@@ -1,0 +1,14 @@
+Alan Tsai
+CS430 HW2
+
+The program takes command line arguments, reads in postscript files and pipe
+it to an XPM file where it will display images.Sample files are given, with
+out of boud points, I've tested all of the sample files input and they seem
+to all be working. The program was written in C++ and the file
+containing main is hw2.cpp and executable file should be A2.
+
+To run the program:
+just type "make" and the Makefile will compile and create executable A2.
+Then type ./A2 -f hw2_1.ps > out1.xpm
+ 
+

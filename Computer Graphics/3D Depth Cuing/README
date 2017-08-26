@@ -1,0 +1,14 @@
+Alan Tsai
+CS430 HW7
+
+The features of the program includes reading in smf file and produces 3D
+image in xpm file format.The program can scanfill the 3D images with colors.
+The program was written in c++ 11. I wrote
+everything on tux vim so everything should be fine. The file contains
+readme, makefile and hw7.cpp.
+
+To run the program:
+just type "make" and the Makefile will compile and create executable A7.
+
+ 
+

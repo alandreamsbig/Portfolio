@@ -1,0 +1,18 @@
+Alan Tsai
+CS430 HW5
+
+The only thing that is not working fully is the viewport. You can somewhat
+see the viewport window, but the filling of the polygons will go crazy.
+Other than that, everthing else seems to be fine.
+
+The program takes command line arguments, reads in postscript files and pipe
+it to an XPM file where it will display polygons.Sample files are given, with
+out of boud points and in boud points. I've tested all of the sample files input and they seem
+to all be working. The program was written in C++ and the file
+containing main is hw5.cpp and executable file should be A5.
+
+To run the program:
+just type "make" and the Makefile will compile and create executable A5.
+Then type bash runtests.sh
+ 
+

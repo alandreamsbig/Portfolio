@@ -1,0 +1,14 @@
+Alan Tsai
+CS430 HW2
+
+The program takes command line arguments, reads in postscript files and pipe
+it to an XPM file where it will display polygons.Sample files are given, with
+out of boud points and in boud points. I've tested all of the sample files input and they seem
+to all be working. The program was written in C++ and the file
+containing main is hw3.cpp and executable file should be A3.
+
+To run the program:
+just type "make" and the Makefile will compile and create executable A3.
+Then type ./A3 -f hw3_1.ps > out1.xpm
+ 
+

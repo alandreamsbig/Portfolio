@@ -1,0 +1,16 @@
+
+Alan Tsai
+CS283 System Programming
+Assignment G1
+email: ayt32@drexel.edu
+
+I started off the program by using a reference to create the hashtable and
+linked list. The program computes the ASCII sum of each word in the way
+mentioned on the assignment page, a = 1, b=2, c=3... The program creates a
+hashtable and each bucket contains a linked list of words. If you run the
+program, you can see my hashtable and the elements in each bucket. The
+hashtable index is also the ASCII sum value which makes it easier to look
+at. Words with the same ASCII sum value are put in to the same bucket. I had
+trouble with pointing to an empty bucket which result a segfault but I fixed
+it. However, I still have trouble with sorting the linked list and check if
+they are anagram.

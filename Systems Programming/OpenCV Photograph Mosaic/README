@@ -1,0 +1,14 @@
+Alan Tsai
+CS 283 001
+
+The purpose of this assignment is to use the OpenCV library and create a
+photograph mosaic using simple color techniques. I will create a new image
+by compositing smalller images together. 
+
+To generate the image, use the command:
+./hw3ex phil.jpg 128 96 thumbs/*
+
+I had trouble compiling at first because I forgot a line which compute the
+average color in getAvgColors() but after using the print statements to find
+where the program ends and debugging, I was able to generate the mosaic
+image. Everthing works

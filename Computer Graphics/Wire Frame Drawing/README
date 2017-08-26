@@ -1,0 +1,14 @@
+Alan Tsai
+CS430 HW6
+
+The features of the program includes reading in smf file and produces 3D
+image in xpm file format. Most of the drawing outputs are correct but some
+roundings may screw up a bit. The program was written in c++ 11. I wrote
+everything on tux vim so everything should be fine. The file contains
+readme, makefile and hw6.cpp.
+
+To run the program:
+just type "make" and the Makefile will compile and create executable A6.
+
+ 
+

@@ -1,0 +1,15 @@
+Alan Tsai
+CS430 HW1
+
+The program takes command line arguments, reads in postscript files and pipe
+it to an XPM file where it will display images.There are some minor issues
+with the program where if the line has infinite slope(a verticle line) it
+does not draw. Also, some images only have serveral dots on the line whihch
+makes it hard to read. The program was written in C++ and the file
+containing main is hw1.cpp and executable file should be A1.
+
+To run the program:
+
+make arg='-f' ps='hw1_1.ps' xpm='out1.xpm'
+
+(the ps and xpm can be replaced with whatever file you want)

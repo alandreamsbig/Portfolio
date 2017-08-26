@@ -1,0 +1,12 @@
+Alan Tsai
+CS 350 HW4
+
+The program uses java serialization to save and load files, the files are
+located in a folder called SurveyTest the same path as the current user
+directory. The files are .ser extension. When loading a file, just type the
+file name, no need to type the extension. MAKE SURE to SAVE the file
+everytime you modify, take the survey/test so it can tabulate and grade.
+Also you need to load the file first in order to take the survey/test.
+
+This assignment uses Audio output for survey/test prompt. Output interface is created with audio or system out options. Load and display file for audio output
+

@@ -1,0 +1,32 @@
+Alan Tsai
+CS283 
+ayt32@drexel.edu
+Assignment G3
+
+This is a threaded chat program which contians server and client. It also
+generates keys, encrypt and decrypt the keys.
+
+I am not sure how the server and client work for the Makefile. I've hard
+coded the server name and port in the Makefile. My threaded chat works
+completely, I have ran tests with my partner(Charly) on tux. To test the
+program, open two tux windows, run the server and client on the same machine
+and port, start typing and it should work. 
+
+I have also implemented the miniRSA functions, finding the Nth prime and
+creating the keys. Hoever, I had trouble doing the encrypt and decrypt so I
+wasn't able to do the key cracker.
+
+To run the program
+
+Server
+gcc csapp.c server.c -lpthread -o server
+./server tux64-11.cs.drexel.edu 8080
+
+client
+gcc csapp client.c -lpthread -o client
+./client 8080
+
+miniRSA
+
+gcc miniRSA.c -o miniRSA
+./miniRSA ${nthprime} ${mthprime}
